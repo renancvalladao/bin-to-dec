@@ -1,38 +1,53 @@
-.App {
+.binary-converter {
+  width: 500px;
+  height: 230px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: lightgray;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.binary-converter .name {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.binary-converter .input {
+  margin: auto;
+  width: 90%;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.binary-converter .input label {
+  margin: 5px;
+  padding: 5px;
+  width: 140px;
+  display: inline-block;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.binary-converter .input input {
+  margin: 5px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.binary-converter .input input:focus {
+  outline-width: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.binary-converter .input button {
+  margin: 5px;
+  padding: 6px 10px 4px 10px;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.binary-converter p {
+  text-align: center;
+  color: red;
+  font-weight: bold;
 }
