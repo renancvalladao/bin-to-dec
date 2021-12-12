@@ -1,5 +1,9 @@
 # Bin2Dec
 
+Idea from [here](https://github.com/florinpop17/app-ideas)
+
+**Demo**: [bin-to-dec-react](https://bin-to-dec-react.netlify.app/)
+
 **Tier:** 1-Beginner
 
 Binary is the number system all digital computers are based on.
