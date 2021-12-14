@@ -1,6 +1,5 @@
 .binary-converter {
-  width: 500px;
-  height: 230px;
+  width: fit-content;
   border-style: solid;
   border-color: gray;
   border-width: 1px;
@@ -11,19 +10,24 @@
   margin-top: 50px;
 }
 
+@media (max-width: 350px) {
+  .binary-converter .input {
+    text-align: center;
+  }
+}
+
 .binary-converter .name {
   text-align: center;
+  margin: 20px;
 }
 
 .binary-converter .input {
+  width: fit-content;
   margin: auto;
-  width: 90%;
   margin-bottom: 20px;
 }
 
 .binary-converter .input label {
-  margin: 5px;
-  padding: 5px;
   width: 140px;
   display: inline-block;
   font-weight: bold;
@@ -38,15 +42,8 @@
   outline-width: 0;
 }
 
-.binary-converter .input button {
-  margin: 5px;
-  padding: 6px 10px 4px 10px;
-  display: inline-block;
-  font-family: inherit;
-  font-weight: bold;
-}
-
-.binary-converter p {
+.binary-converter .error {
+  min-height: 40px;
   text-align: center;
   color: red;
   font-weight: bold;
